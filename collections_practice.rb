@@ -33,7 +33,7 @@ def find_a(array)
   array = array.select {|x| x[0].include?("a") == true}
 end 
 
-def sum_array
+def sum_array(array)
   array.inject{|n, array| n + array}
 end
 
