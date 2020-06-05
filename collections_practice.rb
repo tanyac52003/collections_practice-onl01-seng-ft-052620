@@ -37,7 +37,7 @@ def sum_array(array)
   array.inject{|n, array| n + array}
 end
 
-def add_s
+def add_s(array)
   array.collect do |element|
     if element != "feet"
       element + "s"
