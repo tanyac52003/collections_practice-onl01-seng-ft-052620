@@ -26,18 +26,25 @@ def reverse_array(array)
 end 
 
 def kesha_maker(array)
-  array.each {}
+  array.each {|x| x[2] = "$"}
 end 
 
 def find_a(array)
-  new_array = []
-  new_array << array.find {|element| element[0] == "a"}
+  array = array.select {|x| x[0].include?("a") == true}
 end 
 
 def sum_array
+  array.inject{|n, array| n + array}
 end
 
 def add_s
+  array.collect do |element|
+    if element != "feet"
+      element + "s"
+    else 
+      element 
+    end 
+  end 
 end 
   
   
